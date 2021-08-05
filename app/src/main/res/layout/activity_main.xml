@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/orange">
+
+    <TextView
+        android:id="@+id/helpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_above="@+id/callForHelp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:id="@+id/callForHelp"
+        android:layout_width="252dp"
+        android:layout_height="209dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:background="#ffb833"
+        android:src="@drawable/fox_btn" />
+
+    <TextView
+        android:id="@+id/hintTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/callForHelp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Интервал слежки (мин):"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/currentIntervalMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/hintTV"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/minusBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="-"
+        android:textSize="18sp"
+        android:layout_below="@+id/hintTV"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/currentIntervalMinutes"
+        android:background="@color/orange"
+        />
+
+    <Button
+        android:id="@+id/plusBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="+"
+        android:textSize="18sp"
+        android:layout_below="@+id/hintTV"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/currentIntervalMinutes"
+        android:background="@color/orange"
+        />
+
+</RelativeLayout>

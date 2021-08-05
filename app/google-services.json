@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "373766878913",
+    "firebase_url": "https://geohelpbutton.firebaseio.com",
+    "project_id": "geohelpbutton",
+    "storage_bucket": "geohelpbutton.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373766878913:android:a3515ffc31654f7e804640",
+        "android_client_info": {
+          "package_name": "com.revenger.geohelpbutton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373766878913-hgsudddj8ftqhqa3f579cpt21fl4j0f4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.revenger.geohelpbutton",
+            "certificate_hash": "3e2d41948402b0c98a0e23b567530277b27ec42f"
+          }
+        },
+        {
+          "client_id": "373766878913-61kjaq9t44q0voh1fhjcmvt6e2natp3c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMqgRNamYaz5Q33ijSR5lyUNaCVU7uiGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373766878913-61kjaq9t44q0voh1fhjcmvt6e2natp3c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainAdminActivity"
+    android:background="@color/orange">
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:paddingStart="5dp"
+        android:text="Время:"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:text="Очистить"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:layout_below="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"/>
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:text="Выйти"
+        android:textColor="@color/black"
+        android:background="@color/orange"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeTextView"
+        android:layout_alignParentRight="true"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_below="@+id/timeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+</RelativeLayout>

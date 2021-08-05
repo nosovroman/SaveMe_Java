@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <ImageView
+                android:id="@+id/login_image"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fox" />
+
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Почта"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/inputs"
+                android:padding="4dp"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="17dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Пароль"
+                android:inputType="textPassword"
+                android:background="@drawable/inputs"
+                android:padding="4dp"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"/>
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="left|center_vertical"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:text="Войти"
+                android:drawableLeft="@drawable/ready"
+                android:drawablePadding="17dp"
+                android:background="#00FFFFFF"
+                android:shadowColor="#00FFFFFF"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/need_new_account_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:text="Зарегистрироваться"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#E29797"
+                android:visibility="visible"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
